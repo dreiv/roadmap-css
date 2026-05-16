@@ -1,0 +1,11 @@
+{
+  "name": "roadmap-css",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "live-server public"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}
