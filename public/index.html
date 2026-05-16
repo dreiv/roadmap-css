@@ -4,12 +4,113 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Roadmap CSS</title>
+    <style>
+      :root {
+        --bg: #ffffff;
+        --text: #222222;
+        --accent: #bc4a00;
+        --gray: #575757;
+        --bg-alt: #f2f2f2;
+        --border: #dcdcdc;
+        --font-main: system-ui, -apple-system, sans-serif;
+        color-scheme: light dark;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #121212;
+          --text: #eeeeee;
+          --accent: #ff9d0a;
+          --gray: #b0b0b0;
+          --bg-alt: #1e1e1e;
+          --border: #383838;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: var(--font-main);
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-color: var(--bg);
+        color: var(--text);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      header,
+      footer {
+        background-color: var(--bg-alt);
+        padding: 1.5rem;
+        text-align: center;
+        border-bottom: 1px solid var(--border);
+      }
+
+      footer {
+        border-bottom: none;
+        border-top: 1px solid var(--border);
+      }
+
+      main {
+        flex: 1;
+        padding: 2rem 1.5rem;
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      h1,
+      h2 {
+        color: var(--text);
+      }
+
+      ol {
+        padding-left: 1.5rem;
+      }
+
+      li {
+        margin-bottom: 0.75rem;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      p {
+        color: var(--gray);
+      }
+    </style>
   </head>
   <body>
-    <ol>
-      <li>
-        <a href="01_lesson.html">Lesson 1</a>
-      </li>
-    </ol>
+    <header>
+      <h1>CSS Learning Roadmap</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Projects & Lessons</h2>
+        <ol>
+          <li>
+            <a href="01_lesson.html">Lesson 1: Introduction</a>
+          </li>
+          <!-- Add more lessons here as you progress -->
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 CSS Learning Journey</p>
+    </footer>
   </body>
 </html>
